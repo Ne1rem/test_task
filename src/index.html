@@ -12,11 +12,130 @@
     <link rel="stylesheet" href="./scss/styles.scss" />
   </head>
   <body>
-    <section>
-      <h1>Example page title</h1>
-      <img src="./img/javascript.svg" alt="" />
-    </section>
-
+    <main class="main">
+      <section class="sidebar-menu">
+        <div class="sidebar-menu__logo">
+          <svg class="sidebar-menu__icon_logo" width="100" height="100">
+            <use href="./img/svg/icons.svg#icon-logo"></use>
+          </svg>
+          <h1 class="logo_title">
+            Dashboard <span class="title_version">v.01</span>
+          </h1>
+        </div>
+        <nav class="sidebar-menu__navigation">
+          <div class="sidebar-menu__navigation__list">
+            <div class="sidebar-menu__navigation__list__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="navigation-icon-bad" width="100" height="100">
+                  <use href="./img/svg/icons.svg#icon-key"></use>
+                </svg>
+                <span class="sidebar-menu__text">Dashboard</span>
+              </a>
+            </div>
+            <div class="sidebar-menu__navigation__list__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="navigation-icon" width="100" height="100">
+                  <use href="./img/svg/icons.svg#icon-box"></use>
+                </svg>
+                <span class="sidebar-menu__text">Product</span>
+              </a>
+            </div>
+            <div class="sidebar-menu__navigation__list__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="navigation-icon-bad" width="100" height="100">
+                  <use href="./img/svg/icons.svg#icon-user"></use>
+                </svg>
+                <span class="sidebar-menu__text">Customers</span>
+              </a>
+            </div>
+            <div class="sidebar-menu__navigation__list__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="navigation-icon-bad" width="100" height="100">
+                  <use href="./img/svg/icons.svg#icon-wallet"></use>
+                </svg>
+                <span class="sidebar-menu__text">Income</span>
+              </a>
+            </div>
+            <div class="sidebar-menu__navigation__list__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="navigation-icon" width="100" height="100">
+                  <use href="./img/svg/icons.svg#icon-discount"></use>
+                </svg>
+                <span class="sidebar-menu__text">Promote</span>
+              </a>
+            </div>
+            <div class="sidebar-menu__navigation__list__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="navigation-icon" width="100" height="100">
+                  <use href="./img/svg/icons.svg#icon-message"></use>
+                </svg>
+                <span class="sidebar-menu__text">Help</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div class="sidebar-menu__user-profile">
+          <img
+            src="./img/avatar_evano.webp"
+            alt="User Avatar"
+            class="sidebar-menu__user-avatar"
+          />
+          <div class="sidebar-menu__user-info">
+            <p class="sidebar-menu__user-name">Evano</p>
+            <p class="sidebar-menu__user-position">Project Manager</p>
+          </div>
+        </div>
+      </section>
+      <div class="wrapper">
+        <div class="header__info">Hello Evano 👋🏼,</div>
+        <section class="customer">
+          <div class="customer__header">
+            <div class="customer__header-left">
+              <h2 class="customer__header-title">All Customers</h2>
+              <h3 class="customer__header-subtitle">Active Members</h3>
+            </div>
+            <div class="customer__header-right">
+              <div class="input-wrapper">
+                <svg class="icon-search" width="100" height="100">
+                  <use href="./img/svg/icons.svg#icon-search"></use>
+                </svg>
+                <input
+                  type="search"
+                  class="customer__search"
+                  placeholder="Search"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="customer__body"></div>
+          <div class="customer__footer">
+            <p class="customer__footer-info">
+              Showing data 1 to 8 of 256K entries
+            </p>
+            <div class="customer__pagination">
+              <button
+                class="pagination__button pagination__button--prev"
+                aria-label="Previous Page"
+              >
+                &laquo;
+              </button>
+              <div class="pagination__buttons"></div>
+              <button
+                class="pagination__button pagination__button--next"
+                aria-label="Next Page"
+              >
+                &raquo;
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="burger-menu">
+        <button class="burger-menu__button" aria-label="Toggle Menu">
+          &#9776;
+        </button>
+      </div>
+    </main>
     <script type="module" src="./main.js"></script>
   </body>
 </html>

@@ -1,15 +1,23 @@
+//Colors
 $_text_black_color: #292d32;
 $_nav_color: #9197b3;
-$_white_color2: #eeeeee;
-$_text_grey_color: #b5b7c0;
+$_card_border_color: #eeeeee;
+$_title_color: #b5b7c0;
 $_white_color: #ffffff;
 $_black_color: #000000;
-$_black_grey_color: #404b52;
+$_text_color: #404b52;
 $_grey_color: #838383;
 $_hover_bg_color: #5932ea;
 $_acitve_members_color: #16c098;
 $_text_active_btn_color: #008767;
-$_bg_active_btn_color: #16c098;
+$_bg_active_btn_color: rgba(22, 192, 152, 0.38);
 $_text_inactive_btn_color: #df0404;
 $_bg_inactive_btn_color: #ffc5c5;
 $_bg_color: #fafbff;
+$_bg_search_color: #f9fbff;
+$_card_text_color: #292d32;
+
+// Font
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 600;
