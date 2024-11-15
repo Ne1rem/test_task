@@ -11,14 +11,133 @@
     />
     
     <script type="module" crossorigin src="/vanilla-vite-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-vite-template/assets/index-e395c7ce.css">
+    <link rel="stylesheet" href="/vanilla-vite-template/assets/index-0320a2ed.css">
   </head>
   <body>
-    <section>
-      <h1>Example page title</h1>
-      <img src="./img/javascript.svg" alt="" />
-    </section>
-
+    <main class="main">
+      <section class="sidebar-menu">
+        <div class="sidebar-menu__logo">
+          <svg class="sidebar-menu__icon_logo" width="100" height="100">
+            <use href="/vanilla-vite-template/assets/icons-3182c81a.svg#icon-logo"></use>
+          </svg>
+          <h1 class="logo_title">
+            Dashboard <span class="title_version">v.01</span>
+          </h1>
+        </div>
+        <nav class="sidebar-menu__navigation">
+          <div class="sidebar-menu__navigation__list">
+            <div class="sidebar-menu__navigation__list__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="navigation-icon-bad" width="100" height="100">
+                  <use href="/vanilla-vite-template/assets/icons-3182c81a.svg#icon-key"></use>
+                </svg>
+                <span class="sidebar-menu__text">Dashboard</span>
+              </a>
+            </div>
+            <div class="sidebar-menu__navigation__list__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="navigation-icon" width="100" height="100">
+                  <use href="/vanilla-vite-template/assets/icons-3182c81a.svg#icon-box"></use>
+                </svg>
+                <span class="sidebar-menu__text">Product</span>
+              </a>
+            </div>
+            <div class="sidebar-menu__navigation__list__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="navigation-icon-bad" width="100" height="100">
+                  <use href="/vanilla-vite-template/assets/icons-3182c81a.svg#icon-user"></use>
+                </svg>
+                <span class="sidebar-menu__text">Customers</span>
+              </a>
+            </div>
+            <div class="sidebar-menu__navigation__list__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="navigation-icon-bad" width="100" height="100">
+                  <use href="/vanilla-vite-template/assets/icons-3182c81a.svg#icon-wallet"></use>
+                </svg>
+                <span class="sidebar-menu__text">Income</span>
+              </a>
+            </div>
+            <div class="sidebar-menu__navigation__list__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="navigation-icon" width="100" height="100">
+                  <use href="/vanilla-vite-template/assets/icons-3182c81a.svg#icon-discount"></use>
+                </svg>
+                <span class="sidebar-menu__text">Promote</span>
+              </a>
+            </div>
+            <div class="sidebar-menu__navigation__list__item">
+              <a href="#" class="sidebar-menu__link">
+                <svg class="navigation-icon" width="100" height="100">
+                  <use href="/vanilla-vite-template/assets/icons-3182c81a.svg#icon-message"></use>
+                </svg>
+                <span class="sidebar-menu__text">Help</span>
+              </a>
+            </div>
+          </div>
+        </nav>
+        <div class="sidebar-menu__user-profile">
+          <img
+            src="data:image/webp;base64,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"
+            alt="User Avatar"
+            class="sidebar-menu__user-avatar"
+          />
+          <div class="sidebar-menu__user-info">
+            <p class="sidebar-menu__user-name">Evano</p>
+            <p class="sidebar-menu__user-position">Project Manager</p>
+          </div>
+        </div>
+      </section>
+      <div class="wrapper">
+        <div class="header__info">Hello Evano 👋🏼,</div>
+        <section class="customer">
+          <div class="customer__header">
+            <div class="customer__header-left">
+              <h2 class="customer__header-title">All Customers</h2>
+              <h3 class="customer__header-subtitle">Active Members</h3>
+            </div>
+            <div class="customer__header-right">
+              <div class="input-wrapper">
+                <svg class="icon-search" width="100" height="100">
+                  <use href="/vanilla-vite-template/assets/icons-3182c81a.svg#icon-search"></use>
+                </svg>
+                <input
+                  type="search"
+                  class="customer__search"
+                  placeholder="Search"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="customer__body"></div>
+          <div class="customer__footer">
+            <p class="customer__footer-info">
+              Showing data 1 to 8 of 256K entries
+            </p>
+            <div class="customer__pagination">
+              <button
+                class="pagination__button pagination__button--prev"
+                aria-label="Previous Page"
+              >
+                &laquo;
+              </button>
+              <div class="pagination__buttons"></div>
+              <button
+                class="pagination__button pagination__button--next"
+                aria-label="Next Page"
+              >
+                &raquo;
+              </button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="burger-menu">
+        <button class="burger-menu__button" aria-label="Toggle Menu">
+          &#9776;
+        </button>
+      </div>
+    </main>
     
   </body>
 </html>
