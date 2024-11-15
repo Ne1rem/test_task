@@ -1,3 +1,8 @@
+@use './common/breakpoints' as *;
+@use './common/mixins' as *;
+@use './common/mixins' as *;
+@use './common/vars' as *;
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +11,8 @@
 body {
   font-family: Poppins;
   font-weight: $font-medium;
-  background-color: $_bg_color;
-  color: $_text_color;
+  background-color: $bg_color;
+  color: $text_color;
 }
 .main {
   max-width: 1440px;
@@ -31,12 +36,12 @@ body {
 .title_version {
   font-weight: 500;
   font-size: 10px;
-  color: $_grey_color;
+  color: $grey_color;
 }
 .sidebar-menu {
   position: abso;
   width: 306px;
-  background-color: $_white_color;
+  background-color: $white_color;
   box-shadow: 0 10px 60px 0 rgba(226, 236, 249, 0.5);
   height: 100vh;
   display: flex;
@@ -73,19 +78,19 @@ body {
         }
         .navigation-icon-bad {
           fill: transparent;
-          stroke: $_nav_color;
+          stroke: $nav_color;
           width: 24px;
           height: 24px;
         }
         .sidebar-menu__text {
-          color: $_nav_color;
+          color: $nav_color;
         }
         .sidebar-menu__icon {
-          color: $_nav_color;
+          color: $nav_color;
         }
         .navigation-icon {
           width: 24px;
-          fill: $_nav_color;
+          fill: $nav_color;
           height: 24px;
         }
         &:not(:first-child)::after {
@@ -93,7 +98,7 @@ body {
           width: 0;
           height: 0;
           position: absolute;
-          color: $_nav_color;
+          color: $nav_color;
           justify-content: center;
           align-self: center;
           right: 20px;
@@ -101,19 +106,19 @@ body {
           transform: translateY(-50%);
         }
         &:hover {
-          background-color: $_hover_bg_color;
+          background-color: $hover_bg_color;
           .sidebar-menu__link,
           .sidebar-menu__icon,
           .sidebar-menu__text,
           .navigation-icon {
-            color: $_white_color;
-            fill: $_white_color;
+            color: $white_color;
+            fill: $white_color;
           }
           .navigation-icon-bad {
-            stroke: $_white_color;
+            stroke: $white_color;
           }
           &:not(:first-child)::after {
-            color: $_white_color;
+            color: $white_color;
           }
         }
       }
@@ -135,7 +140,7 @@ body {
       }
       .sidebar-menu__user-position {
         font-weight: $font-regular;
-        color: $_nav_color;
+        color: $nav_color;
       }
     }
   }
@@ -146,7 +151,7 @@ body {
   width: 100%;
   max-height: 812px;
   max-width: 968px;
-  background-color: $_white_color;
+  background-color: $white_color;
   margin: 0 auto;
   border-radius: 20px;
   &__header {
@@ -161,7 +166,7 @@ body {
       }
       .customer__header-subtitle {
         font-weight: $font-regular;
-        color: $_bg_active_btn_color;
+        color: $bg_active_btn_color;
       }
     }
     &-right {
@@ -173,14 +178,14 @@ body {
         height: 38px;
         border-radius: 10px;
         border: none;
-        background-color: $_bg_search_color;
+        background-color: $bg_search_color;
       }
     }
   }
   &__body {
     padding: 1rem;
     font-size: 14px;
-    color: $_card_text_color;
+    color: $card_text_color;
   }
   &__table {
     display: grid;
@@ -189,15 +194,15 @@ body {
   &__table-column,
   &__table-cell {
     padding: 20px;
-    border-bottom: 1px solid $_card_border_color;
+    border-bottom: 1px solid $card_border_color;
   }
   &__table-column {
     font-weight: bold;
-    color: $_title_color;
+    color: $title_color;
     white-space: nowrap;
   }
   &__table-cell {
-    color: $_card_text_color;
+    color: $card_text_color;
   }
   &__footer {
     display: flex;
@@ -208,7 +213,7 @@ body {
     padding-top: 32px;
     &-info {
       font-size: 14px;
-      color: $_title_color;
+      color: $title_color;
     }
   }
 }
@@ -231,15 +236,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid $_card_border_color;
+  border: 1px solid $card_border_color;
   background-color: #f5f5f5;
-  color: $_card_text_color;
+  color: $card_text_color;
   font-size: 16px;
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.3s, color 0.3s;
   &:hover {
-    color: $_white_color;
+    color: $white_color;
   }
 
   &--prev,
@@ -248,8 +253,8 @@ body {
   }
 }
 .current {
-  background-color: $_hover_bg_color;
-  color: $_white_color;
+  background-color: $hover_bg_color;
+  color: $white_color;
 }
 .customer__pagination {
   display: flex;
@@ -262,20 +267,20 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid $_card_border_color;
-    background-color: $_bg_search_color;
-    color: $_card_text_color;
+    border: 1px solid $card_border_color;
+    background-color: $bg_search_color;
+    color: $card_text_color;
     font-size: 14px;
     border-radius: 4px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     &:hover {
-      background-color: $_bg_search_color;
-      color: $_title_color;
+      background-color: $bg_search_color;
+      color: $title_color;
     }
     &.active {
-      background-color: $_title_color;
-      color: $_bg_search_color;
+      background-color: $title_color;
+      color: $bg_search_color;
     }
   }
 }
@@ -286,9 +291,9 @@ body {
   right: 10px;
 }
 .burger-menu__button {
-  background-color: $_bg_search_color;
+  background-color: $bg_search_color;
   border: none;
-  color: $_hover_bg_color;
+  color: $hover_bg_color;
   font-size: 24px;
   border-radius: 5px;
 }
@@ -306,7 +311,7 @@ body {
   width: 24px;
   height: 24px;
   pointer-events: none;
-  fill: $_nav_color;
+  fill: $nav_color;
 }
 
 .customer__table-cell {
@@ -322,9 +327,9 @@ body {
   width: 80px;
   height: 29px;
   border-radius: 4px;
-  color: $_text_active_btn_color;
-  background-color: $_bg_active_btn_color;
-  border: 1px solid $_acitve_members_color;
+  color: $text_active_btn_color;
+  background-color: $bg_active_btn_color;
+  border: 1px solid $acitve_members_color;
 }
 
 .customer__table-cell--status-inactive {
@@ -337,9 +342,9 @@ body {
   width: 80px;
   height: 29px;
   border-radius: 4px;
-  color: $_text_inactive_btn_color;
-  background-color: $_bg_inactive_btn_color;
-  border: 1px solid $_text_inactive_btn_color;
+  color: $text_inactive_btn_color;
+  background-color: $bg_inactive_btn_color;
+  border: 1px solid $text_inactive_btn_color;
 }
 
 @media (max-width: 1280px) {
